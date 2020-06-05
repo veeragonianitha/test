@@ -1,0 +1,249 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Julee&display=swap" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Memoryz-Photo & video website </title>
+    <script>
+            
+            
+            $("right").click(function () { 
+                console.log("hello")
+  var leftPos = $('#one').scrollLeft();
+  $("#one").animate({scrollLeft: leftPos - 200}, 100);
+});
+
+
+            
+            </script>
+    <style>
+      
+
+
+        /*CSS FOR GALLERY*/
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom sticky-top navbar-dark" id="navbar">
+    <a class="navbar-brand" href="index.html">
+        <img class="imgg" src="images/logowb.png" class="img-fluid" width="155" height="55">
+    </a>
+    <button class="navbar-toggler" id="hamclick" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" onclick="menuclick()" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto" id="navb">
+            <li class="nav-item">
+                <a class="nav-link mr-3" href="index.html">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link mr-3" href="gallery.html">GALLERY</a>
+            </li>
+                   
+            <li class="nav-item">
+                <button type="button" class="btn book-us btn-custom" data-toggle="modal" data-target="#myModal"><a class="nav-link mr-3" href="javascript:void(0)">BOOK US</a></button> </li>
+
+                <div class="modal" id="myModal">
+                  <div class="sp-modal_overlay"></div>
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <center><h4 class="modal-title" style="color:#ffc107ba; text-align: center;">Booking form</h4></center>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        
+        <div class="form-group">
+            
+  <label for="place" style="color:#ffc107ba;">UserName:</label>
+  <input type="text" class="form-control" id="usr" placeholder=" Enter your UserName" style="background-color:#1a1a0042; color:; border: 2px solid #c5a2396b;">
+</div>
+
+
+<div class="form-group">
+    
+  <label for="place" style="color:#ffc107ba;">Email:</label>
+  <input type="Email" class="form-control" id="usr" placeholder=" Enter your Email" style="background-color:#1a1a0042; color:; border: 2px solid #c5a2396b;">
+
+</div>
+
+<div class="form-group">
+    
+  <label for="place" style="color:#ffc107ba;">Phone Number:</label>
+  <input type="text" class="form-control" id="Phone" placeholder=" Enter your Phone Number" style="background-color:#1a1a0042; color:; border:2px solid #c5a2396b;">
+
+</div>
+
+<div class="form-group">
+    
+  <label for="place" style="color:#ffc107ba;">Alternate Number:</label>
+  <input type="text" class="form-control" id="usr" placeholder=" Enter your Alternate Number" style="background-color:#1a1a0042; color:; border:2px solid #c5a2396b;">
+</div>
+
+
+<div class="form-group">
+    
+  <label for="place" style="color:#ffc107ba;">Place:</label>
+  <input type="text" class="form-control" id="usr" placeholder=" Enter your Place"  style="background-color:#1a1a0042; color:; border:2px solid #c5a2396b;">
+  </div>
+
+
+<div class="form-group">
+    
+  <label for="place" style="color:#ffc107ba;">City:</label>
+  <input type="text" class="form-control" id="usr" placeholder=" Enter your City" style="background-color:#1a1a0042; color:; 
+  border:2px solid #c5a2396b;">
+
+</div>
+
+
+    <div class="form-group">
+  
+  
+    <label for="Program" style="color:#ffc107ba;">Program:</label>
+  
+  <select style="background-color:#1a1a0042; border:2px solid #c5a2396b; color:#ffc107ba;">
+      <option value="">Select here</option>
+      <option value="Birthday">Birthday</option>
+      <option value="Birthday">Marriage</option>
+      <option value="Birthday">Get-Together</option>
+      <option value="Birthday">Casual Shoot</option>
+  </select>
+  
+</div>
+
+<form>
+  <label for="startTime" style="color:#ffc107ba;">Appointment: </label>
+  <input type="time" id="startTime" style="background-color:#1a1a0042; border:2px solid #c5a2396b; color:#ffc107ba;">
+</form>
+
+
+
+<div class="form-group">
+  <button type="button" class="btn btn-success" style="background-color:#1a1a0042; border:4px solid #c5a2396b; color:#ffc107ba;">Submit</button>
+</div>
+
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" style="background-color:#1a1a0042; border:4px solid #c5a2396b; color:#ffc107ba;">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+            
+
+           <li class="nav-item" style="margin-left:5px;">
+            <button class=" navlink btn btn-custom-1 mr-3">JOIN US</button>
+
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--Gallery-->
+<div class="container2" >
+        <!---<img  class="right" style="position:fixed;z-index:999;right:0" src="arrowright.svg" width="40"/>
+
+        <img  class="left"  style="position:fixed;z-index:999;left:0" src="left.svg" width="40"/> --->
+           <div class="slider" id="one">
+       <img src="images/boy-child-daytime-2802368.jpg" alt="Bhutan">
+    <div class="slider1" >
+            <!-- <img  style="position:absolute; left:-136; top:-300px" src="arrowright.svg" width="40"/> -->
+       <h4 style="  background: white; -webkit-text-fill-color: black; padding: 5;margin-bottom: 15">KIDS SHOOT</h4>
+       <a class="ml-4 mb-5" href="kids shoot.html">VIEW MORE</a>
+    </div>
+    </div>
+    <div class="slider">
+    <img src="images/child-cute-enjoyment-1257099.jpg" alt="Bhutan">
+    <div class="slider1">
+            <h4 style="  background: white; -webkit-text-fill-color: black; padding: 5;margin-bottom: 15">NEW BORN</h4>
+            <a class="ml-3 mb-5" href="new born.html">VIEW MORE</a>
+         </div>
+</div>
+<div class="slider">
+    <img src="images/5e79603.jpg" alt="Bhutan">
+    <div class="slider1">
+            <h4 style="  background: white; -webkit-text-fill-color: black; padding: 5;margin-bottom: 15">COUPLE SHOOT</h4>
+            <a class="ml-5 mb-5" href="couple shoot.html">VIEW MORE</a>
+         </div>
+
+
+    </div>
+
+    <div class="slider">
+    <img src="images/Pune_T_008.jpg" alt="Bhutan">
+    <div class="slider1">
+            <h4 style="  background: white; -webkit-text-fill-color: black; padding: 5;margin-bottom: 15">GIRLS SHOOT</h4>
+            <a class="ml-4 mb-5" href="girls shoot.html">VIEW MORE</a>
+         </div>
+    </div>
+
+    <div class="slider">
+    <img src="images/1.jpg" alt="Bhutan">
+    <div class="slider1">
+            <h4 style="background: white; -webkit-text-fill-color: black; padding: 5;margin-bottom: 15">REUNION</h4>
+            <a class="ml-2 mb-5" href="reunion.html">VIEW MORE</a>
+         </div>
+    </div>
+
+    <div class="slider">
+    <img src="images/meternity.jpg" alt="Bhutan">
+    <div class="slider1">
+            <h4 style="  background: white; -webkit-text-fill-color: black; padding: 5;margin-bottom: 15">METERNITY</h4>
+            <a class="ml-3 mb-5" href="meternity.html">VIEW MORE</a>
+         </div>
+    </div>
+
+    <div class="slider">
+    <img src="images/wedding-shoot-in-kota-500x500.jpg" alt="Bhutan">
+    <div class="slider1">
+            <h4 style="  background: white; -webkit-text-fill-color: black; padding: 5;margin-bottom: 15">WEDDING SHOOT</h4>
+            <a class="ml-3 mb-5" href="wedding shoot.html">VIEW MORE</a>
+         </div>
+    </div>
+    <div class="slider">
+    <img src="images/343.jpg" alt="Bhutan">
+    <div class="slider1">
+            <h4 style="  background: white; -webkit-text-fill-color: black; padding: 5;margin-bottom: 15">BOYS SHOOT</h4>
+            <a class="ml-3 mb-5" href="boys shoot.html">VIEW MORE</a>
+         </div>
+    </div>
+    <div class="slider">
+    <img src="images/b305d.jpg" alt="Bhutan">
+    <div class="slider1">
+            <h4 style="  background: white; -webkit-text-fill-color: black; padding: 5;margin-bottom: 15">BIRTHDAY SHOOT</h4>
+            <a class="ml-3 mb-5" href="birthday.html">VIEW MORE</a>
+         </div>
+</div>
+
+
+</div>
+
+
+
+<!--Gallery end-->
+</body>
+</html>
